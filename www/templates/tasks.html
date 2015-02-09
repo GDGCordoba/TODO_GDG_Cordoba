@@ -1,0 +1,12 @@
+<ion-view view-title="Tasks">
+  <ion-content scroll="false">
+    <ion-list>
+      <ion-item ng-repeat="task in tasks">
+        <span>{{task.title}}</span>
+        <ion-option-button class="button-assertive" ng-click="remove(task)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
